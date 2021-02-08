@@ -23,18 +23,5 @@ To represent board states we're going to use a tuple of tuples, so that you may 
 You will need to call the print() function for each row of output. You will find that the print() function inserts spaces between every item you provide it. This is because the default parameter to the sep keyword parameter is ' ' - you will want to change it to ''. Alternatively, you can use .format() or f''; there are other approaches as well! (if you want to print() without a new line add the keyword parameter end='')
 
 
-def print_state(state):
-    """Prints the state."""
-    print(state[0][0]+'|'+state[0][1]+'|'+state[0][2],sep='')
-    print(state[1][0]+'|'+state[1][1]+'|'+state[1][2],sep='')      
-    print(state[2][0]+'|'+state[2][1]+'|'+state[2][2],sep='')      
-    
-print_state(((' ',' ',' '),(' ',' ',' '),(' ',' ',' ')))
-print() # This adds a newline, so the outputs are not vertically next to each other
-
-print_state((('o','x','x'),(' ','x','o'),('o','x',' ')))
-print()
-
-print_state((('o','o','o'),('x','x','x'),(' ',' ',' ')))
 
 
